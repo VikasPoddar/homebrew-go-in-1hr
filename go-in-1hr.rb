@@ -5,20 +5,20 @@
 class GoIn1hr < Formula
   desc ""
   homepage "https://github.com/VikasPoddar/go-in-1hr"
-  version "0.0.2-rc-3"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/VikasPoddar/go-in-1hr/releases/download/v0.0.2-rc-3/go-in-1hr_Darwin_x86_64.tar.gz"
-      sha256 "17a3d901c6688d08e630dec859cf177baa11d8140f1c3cdf915794e5ccfca3f2"
+      url "https://github.com/VikasPoddar/go-in-1hr/releases/download/v0.0.2/go-in-1hr_Darwin_x86_64.tar.gz"
+      sha256 "cfda5ed7885bbf28df6e33efa7db9f9ad0cbe362acd15be96c390c9f2310de75"
 
       def install
         bin.install "go-in-1hr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/VikasPoddar/go-in-1hr/releases/download/v0.0.2-rc-3/go-in-1hr_Darwin_arm64.tar.gz"
-      sha256 "5c219633d76e88164727c1da2a7c7375d3e99e24a9513df6a95fc770d901749e"
+      url "https://github.com/VikasPoddar/go-in-1hr/releases/download/v0.0.2/go-in-1hr_Darwin_arm64.tar.gz"
+      sha256 "6e8ce39cc6238116a0d4dff0bc00d5d99613a2865732dcacb4b3bf10c5edd342"
 
       def install
         bin.install "go-in-1hr"
@@ -29,8 +29,8 @@ class GoIn1hr < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/VikasPoddar/go-in-1hr/releases/download/v0.0.2-rc-3/go-in-1hr_Linux_x86_64.tar.gz"
-        sha256 "e55ba96b70471c8fd79292192d0f0038b1673433d304c956ab60ade097b108ba"
+        url "https://github.com/VikasPoddar/go-in-1hr/releases/download/v0.0.2/go-in-1hr_Linux_x86_64.tar.gz"
+        sha256 "f3077f62b09b20ff55879595dcb3fba1c9c43ac08d67231049641c5aeaab5979"
 
         def install
           bin.install "go-in-1hr"
@@ -39,8 +39,8 @@ class GoIn1hr < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/VikasPoddar/go-in-1hr/releases/download/v0.0.2-rc-3/go-in-1hr_Linux_arm64.tar.gz"
-        sha256 "bd40d1ac8811cfcc7b6421a76f3ec6082d80f9fbfa5f690b82839f7036c3a77a"
+        url "https://github.com/VikasPoddar/go-in-1hr/releases/download/v0.0.2/go-in-1hr_Linux_arm64.tar.gz"
+        sha256 "bebabceef6162fd934a19df0df6e7bba5b0a0ba7dd93d8006ac18bdfb14624e6"
 
         def install
           bin.install "go-in-1hr"
